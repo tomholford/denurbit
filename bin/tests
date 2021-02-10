@@ -1,1 +1,1 @@
-deno --unstable test --allow-read
+deno --unstable test --allow-read --allow-net

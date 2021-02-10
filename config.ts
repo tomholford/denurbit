@@ -1,13 +1,5 @@
 import { existsSync } from "https://deno.land/std/fs/mod.ts";
-
-interface ConfigOptions {
-  code?: string,
-  host?: string,
-  name?: string,
-  port?: string,
-  config_file?: string
-}
-
+import ConfigOptions from "./types/config_options.ts"
 export default class Config {
   code: string;
   host: string;
