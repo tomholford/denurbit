@@ -2,14 +2,10 @@
 
 An [Urbit](https://urbit.org/) API client implemented in [Deno](https://deno.land/).
 
-## Setup
-
-TBD :)
-
 ## Usage
 
 ```ts
-import { Config, Ship } from 'denurbit';
+import { Config, Ship } from 'https://deno.land/x/denurbit';
 
 config = new Config(config_file: 'my_moon.json');
 ship = new Ship(config);
