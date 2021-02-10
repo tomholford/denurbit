@@ -1,0 +1,1 @@
+deno --unstable test --allow-read
