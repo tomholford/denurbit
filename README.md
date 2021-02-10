@@ -31,7 +31,12 @@ ship.isAuthed
 
 ## Roadmap
 
-- [ x ] Config
+- [x] Config
 - [ ] Ship
+  - [x] Authentication
+  - [ ] Open Channel
+  - [ ] Close Channel
+  - [ ] Send Message to Channel
+  - [ ] React to Message from Channel
 - [ ] Channel
 - [ ] Message
