@@ -3,7 +3,7 @@ import Ship from "./ship.ts";
 
 Deno.test("Ship: authentication flow with fake zod", async () => {
   const instance = new Ship();
-  assertEquals(instance.isAuthed, false);
+  assertEquals(instance.client.isAuthed, false);
   await instance.authenticate();
-  assertEquals(instance.isAuthed, true);
+  assertEquals(instance.client.isAuthed, true);
 });

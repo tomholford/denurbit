@@ -38,4 +38,8 @@ export default class Config {
   get apiBaseUrl() {
     return `${this.host}:${this.port}`;
   }
+
+  get untildedName() {
+    return this.name.replace('~', '');
+  }
 }
