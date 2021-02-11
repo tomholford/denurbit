@@ -18,16 +18,16 @@ export default class Ship {
       {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: `password=${this.config.code}`
+        body: `password=${this.config.code}`,
       },
     );
 
-    if(response.ok) {
-      const cookie = response.headers.get('set-cookie')
+    if (response.ok) {
+      const cookie = response.headers.get("set-cookie");
 
-      if(cookie) { this.authCookie = cookie.split(';')[0] };
+      if (cookie) this.authCookie = cookie.split(";")[0];
     } else {
-      console.log('auth error :(');
+      console.log("auth error :(");
       console.log(response);
     }
   };

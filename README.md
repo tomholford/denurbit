@@ -1,6 +1,7 @@
 # denurbit
 
-An [Urbit](https://urbit.org/) API client implemented in [Deno](https://deno.land/).
+An [Urbit](https://urbit.org/) API client implemented in
+[Deno](https://deno.land/).
 
 ## Usage
 
