@@ -2,6 +2,7 @@ import Config from "./config.ts";
 import RequestOptions from "./types/request_options.ts";
 
 export default class APIClient {
+  // TODO: persist TTL from cookie, auto re-auth when expired
   authCookie: string | null = null;
   config: Config;
 
@@ -40,7 +41,6 @@ export default class APIClient {
     );
 
     if (response.ok) {
-      // what to do with response?
       return response;
     } else {
       console.log("auth error :(");

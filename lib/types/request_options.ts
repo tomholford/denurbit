@@ -1,6 +1,6 @@
 export default interface RequestOptions {
   body?: string;
-  method: 'POST' | 'PUT';
+  method: 'GET' | 'POST' | 'PUT';
   url: string;
   headers?: Record<string, string>;
 }

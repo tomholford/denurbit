@@ -20,11 +20,11 @@ Deno.test("Channel: it can open and close a channel", async () => {
 
   assertEquals(instance.opened, false);
   
-  await instance.openChannel();
+  await instance.open();
   
   assertEquals(instance.opened, true);
 
-  await instance.closeChannel();
+  await instance.close();
   
   assertEquals(instance.opened, false);
 });
