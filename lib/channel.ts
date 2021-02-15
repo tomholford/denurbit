@@ -26,6 +26,7 @@ export default class Channel {
 
     if (response.ok) {
       this.opened = true;
+      this.ship.openChannels.push(this);
       this.nextMessageId += 1;
     }
   }
@@ -45,6 +46,7 @@ export default class Channel {
 
     if (response.ok) {
       this.opened = false;
+      this.ship.openChannels = this.ship.openChannels.filter((ch) => { ch.uid === this.uid });
       this.nextMessageId += 1;
     }
   }
