@@ -22,6 +22,8 @@ ship.isAuthed
 
 ## Test
 
+Tests expect [a fake development ship](https://urbit.org/docs/development/environment/#creating-a-development-ship) to be running at `http://localost:80`
+
 ```sh
 ./bin/tests
 ```
@@ -29,7 +31,7 @@ ship.isAuthed
 ## Roadmap
 
 - [x] Config
-- [ ] Ship
+- [ ] HTTP API Integration (*in progress*)
   - [x] Authentication
   - [ ] Open Channel
   - [ ] Close Channel
@@ -37,3 +39,10 @@ ship.isAuthed
   - [ ] React to Message from Channel
 - [ ] Channel
 - [ ] Message
+- [ ] `graph-store` integration
+- [ ] `group-store` integration
+- [ ] `metadata-store` integration
+
+## Contributing
+
+All help is welcome! To test this lib locally, spin up a fake development ship and 
