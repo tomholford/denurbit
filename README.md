@@ -1,5 +1,7 @@
 # denurbit
 
+[![awesome urbit badge](https://img.shields.io/badge/~-awesome%20urbit-lightgrey)](https://github.com/urbit/awesome-urbit)
+
 An [Urbit](https://urbit.org/) API client implemented in
 [Deno](https://deno.land/).
 
@@ -42,7 +44,3 @@ Tests expect [a fake development ship](https://urbit.org/docs/development/enviro
 - [ ] `graph-store` integration
 - [ ] `group-store` integration
 - [ ] `metadata-store` integration
-
-## Contributing
-
-All help is welcome! To test this lib locally, spin up a fake development ship and 
